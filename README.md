@@ -37,30 +37,35 @@ roller version
 ```
 roller config init --interactive
 ```
-![Ekran görüntüsü 2024-02-04 012054](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/04bdf7ca-2a1b-4551-aeab-2b54d23f2cdc)
-
 * Froopyland ağını seçiyoruz.
 
-![Ekran görüntüsü 2024-02-04 012139](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/9b16ca44-50d1-482a-955f-01493e2042e4)
+![Ekran görüntüsü 2024-02-04 012054](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/04bdf7ca-2a1b-4551-aeab-2b54d23f2cdc)
 
 * EVM Rollapp'i seçiyoruz.
 
-![Ekran görüntüsü 2024-02-04 012404](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/c745df05-521a-456d-888a-36131fd96b65)
+![Ekran görüntüsü 2024-02-04 012139](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/9b16ca44-50d1-482a-955f-01493e2042e4)
 
 * Kendi Rollapp'inize verdiğiniz ismi yazın. Özel karakterler ve büyük harf kullanmayın! (-,* " gibi.)
 
-![Ekran görüntüsü 2024-02-04 012506](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/53d82d34-4a32-4e3d-841c-bfd9e31d3dab)
+![Ekran görüntüsü 2024-02-04 012404](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/c745df05-521a-456d-888a-36131fd96b65)
 
 * Token sembolünü seçiyoruz ETH, BTC gibi büyük harfle semboller girin. (Türkçe karakter kullanmayın.)
 
-![Ekran görüntüsü 2024-02-04 012621](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/56dc6dfc-9005-43fb-8673-903895e7eed4)
+![Ekran görüntüsü 2024-02-04 012506](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/53d82d34-4a32-4e3d-841c-bfd9e31d3dab)
 
 * Token adedini belirliyoruz. Rastgele gelen miktar 1 Milyar adet daha fazla istiyorsanız sonuna sıfır ekleyebilirsiniz.
 
+![Ekran görüntüsü 2024-02-04 012621](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/56dc6dfc-9005-43fb-8673-903895e7eed4)
+
+
+
 # ÇOK ÖNEMLİ!
-![Ekran görüntüsü 2024-02-04 012747](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/4e2f0428-b785-47d9-8205-d630eafe0635)
 
 * Burada seçimi AVAIL'i seçiyoruz.
+
+![Ekran görüntüsü 2024-02-04 012747](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/4e2f0428-b785-47d9-8205-d630eafe0635)
+
+
 ## Yukarıdaki adımları doğru şekilde tamamlarsanız aşağıdakine benzer bir çıktı alacaksınız.
 
 ![Ekran görüntüsü 2024-02-04 012901](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/5fdd05b2-4a2e-48e8-ac6e-29fb140f5d62)
