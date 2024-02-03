@@ -57,62 +57,6 @@ roller config init --interactive
 
 * Token adedini belirliyoruz. Rastgele gelen miktar 1 Milyar adet daha fazla istiyorsanız sonuna sıfır ekleyebilirsiniz.
 
-
-
-### Docker Kuruyoruz.
-
-```
-sudo apt install apt-transport-https ca-certificates curl software-properties-common
-```
-```
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-```
-```
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-```
-```
-sudo apt update
-```
-```
-sudo apt install docker-ce
-```
-```
-sudo systemctl start docker
-```
-```
-sudo systemctl enable docker
-```
-
-### Tekrar Güncelliyoruz.
-```
-sudo apt-get update -y && sudo apt-get upgrade -y
-```
-```
-sudo apt install build-essential
-```
-```
-sudo apt install pkg-config
-```
-```
-sudo apt install libssl-dev
-```
-```
-sudo apt install clang
-```
-```
-sudo apt install protobuf-compiler
-```
-
-## MADARA Kuruyoruz;
-```
-git clone https://github.com/karnotxyz/madara-cli
-```
-```
-cd madara-cli
-```
-```
-cargo build --release
-```
 # Dikkat Komutu Girmeden önce alttaki görselleri ve açıklamaları okuyun.
 
 * Komutu başlatınca ilk olarak sizden bir chain ismi isteyecek. İstediğiniz bir ismi girebilirsiniz.
