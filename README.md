@@ -90,109 +90,47 @@ nano /root/.roller/rollapp/config/dymint.toml
 roller keys list
 ```
 * Yukarıdaki komut ile adreslerimizi tekrar listeliyoruz. Kendi AVAIL adresimizi orada görüyorsak, işlemlere devam edebiliriz.
+![Ekran görüntüsü 2024-02-04 014902](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/ae9335ad-7c19-4293-afb0-b6f03d9d0e92)
 
 
-
-
-# Not: BURADA size yeni bir AVAIL adresi verecek onu AVAIL'de puan kastığımız cüzdan ile değiştireceğiz.
-
-# Not-2: Eğer ilk defa katılacaksanız. Aşağıdaki komutu çalıştırıp içindeki bilgileri bir yere not edin. Devam etmeden önce AVAIL discordundan [BURADAN](https://discord.gg/availproject) giriyoruz. Gitcoin pass puanımızın 20 ve üzerinde olması gerekiyor. Discord ve Gitcoin Pass doğrulamasını yaptıktan sonra Goldberg Faucet kanalından node içinde oluşan cüzdana token istiyoruz. Tokenler geldikten sonra aşağıdaki işlemlere devam ediyoruz.
-
-
-İlk olarak aşağıdaki komutu giriyoruz. "" dahil aradaki notu silip  app'e verdiğin isimle değiştiriyorsun.
+### Devam edelim.
+* Hey ilk defa kuran sen :D buradan başlayıp devam edebilirsin.
+  
 ```
-nano /root/.madara/app-chains/"Verdiğin App name ismi"/da-config.json
+roller tx register
 ```
-![Ekran görüntüsü 2024-01-25 232340](https://github.com/CoinHuntersTR/Avail-Full-Node/assets/111747226/88e2fd32-1109-4d78-8f1a-dce8902d44be)
+![Ekran görüntüsü 2024-02-04 015631](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/382a053f-d72f-4ce0-9a42-957b6d020910)
 
-* Benzer bir sayda açılacak "seed":"0x... yazan yerdeki private key silip Cüzdan kelimelerimizi ekliyoruz. Son bölümdeki cüzdan adresini de AVAIL'deki cüzdan adresiyle değiştiriyoruz.
+* Bu şekilde çıktı aldıysanız. İşlemler tamam devam edelim.
 
-* CTRL X Y ve ENTER basıyoruz.
+### Yeni Bir Screen Açalım
 
-### Gerekli Portları açıyoruz.
-```
-sudo ufw enable
-sudo ufw allow 22
-sudo ufw allow 4000
-sudo ufw allow 5353
-sudo ufw allow 47250
-sudo ufw allow 39276
-sudo ufw allow 36347
-sudo ufw allow 43759
-sudo ufw allow 40815
-sudo ufw allow 30333
-sudo ufw allow 9944
-sudo ufw allow 9615
-```
-### Yeni bir screen açalım
 ```
 sudo apt install screen
 ```
 ```
-screen -S roller
+screen -S rollapp
 ```
-### App-chaini çalıştırıyoruz.
-
 ```
-./target/release/madara run
+roller run
 ```
-Çalıştıktan sonra bloklar akmaya başladığında CTRL A+D ile çıkıyoruz.
+![Ekran görüntüsü 2024-02-04 020014](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/cb382028-1f76-4684-8873-9e3296834b61)
 
-### Exlporer sayfamızı çalıştıralım
+* Bu komutu çalıştırdıktan sonra, rollapp'in çalışması için channel bulması gerekiyor bu bazen 1 saat bazen 1 gün sürebilir. Channel bulana kadar bekliyoruz. Channel bulduktan sonra aşağıdaki adımlara devam edeceğiz.
+
+* Bulunduğunuz ekrandan çıkmak için CTRL A sonra da D yapıp çıkabilirsiniz.
+  
+* Tekrar aynı screen içine girmek istiyorsanız aşağıdaki komutu kullanabilrsin.
+  
+ ```
+screen -r rollapp
+``` 
+
+### Protlarımızı açalım
 ```
-cd
-cd madara-cli
-./target/release/madara explorer --host=IPADRESIN
-```
-Bu çalıştıktan sonra. http://SUNUCUIPADRESI:4000 sayfasından app-chaininize ait explorer ulaşabilirsiniz.
-
-![Ekran görüntüsü 2024-01-26 003113](https://github.com/CoinHuntersTR/Avail-Full-Node/assets/111747226/b568b4b2-d4ab-4e9d-a2df-92c06fe9afb3)
-
-### En son App yayınlayalım
-
-Önce aşağıdaki örnek olan komutları uyarılara göre düzenliyoruz.
-```
-  {
-    "name": "App Name",
-    "logo": "https://imgur.com/c09XXKf.png", // profil fotosu yüklüyoruz.
-    "rpc_url": "http://IPADRESIN:9944",
-    "explorer_url": "http://IPADRESIN:4000",
-    "metrics_endpoint": "http://IPADRESIN:9615/metrics", 
-    "id": "812de564-4f60-4ea0-b35f-5e7143769fbc" // uid alıyoruz.
-  }
-```
-* ID almak için [BURADAN](https://www.uuidgenerator.net/) siteye gidiyoruz. Refresh yapıyoruz. çıkan ID alıp kopyalıyoruz.
-
-![Ekran görüntüsü 2024-01-27 215100](https://github.com/CoinHuntersTR/Avail-Full-Node/assets/111747226/3f519de4-93c8-4167-8545-786729ba784c)
-
-400x400 boyutunnda bir resim ayarlıyoruz. [BURADAN](https://resimlink.com/)
-
-![Ekran görüntüsü 2024-01-27 215606](https://github.com/CoinHuntersTR/Avail-Full-Node/assets/111747226/b336b64a-e32c-44b3-b8b3-e7b5d320fe18)
-
-* Resim Direkt linki alıp Yukarıdaki json dosyanıza ekleyebilirsiniz.
-
-* Yukarıdaki komutları düzenleyiyoruz. Bir tane json dosyası oluşturuyoruz. Dosya isminiz aldığınız ID ismi olacaktır.
-
-![Ekran görüntüsü 2024-01-27 220406](https://github.com/CoinHuntersTR/Avail-Full-Node/assets/111747226/67f0ebd0-44eb-4309-bae2-39fd9286dc37)
-
-
-## PR Açıyoruz.
-
-[BURADAN](https://github.com/karnotxyz/avail-campaign-listing) buraya gidiyoruz ve ilk olarak Forkluyoruz.
-
-![Ekran görüntüsü 2024-01-27 215811](https://github.com/CoinHuntersTR/Avail-Full-Node/assets/111747226/e75cae6d-b503-49ed-b73b-222a1ee56d1c)
-
-Forkladıktan sonra app-chains klasörüne giriyoruz.
-
-![Ekran görüntüsü 2024-01-27 215936](https://github.com/CoinHuntersTR/Avail-Full-Node/assets/111747226/0437e175-a142-44c7-a465-d48ef194dd89)
-
-* Buradan hazırladığımız json dosyasını buraya yüklüyoruz. 
-
-![Ekran görüntüsü 2024-01-27 220708](https://github.com/CoinHuntersTR/Avail-Full-Node/assets/111747226/38efaa74-0a00-499a-93f7-5f66d3ff3853)
-
-Yükledikten sonra sağ üstten Pull Request yapıyoruz. Başlık bölümüne ✨ Adding verdiğiniz app ismi şeklinde yazabilirsiniz.
-
-
-
-
-
+sudo ufw allow 22
+sudo ufw enable
+sudo ufw allow 26657
+sudo ufw allow 8545
+sudo ufw allow 1317
+``` 
