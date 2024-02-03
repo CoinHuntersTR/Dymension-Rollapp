@@ -57,20 +57,6 @@ roller config init --interactive
 
 * Token adedini belirliyoruz. Rastgele gelen miktar 1 Milyar adet daha fazla istiyorsanız sonuna sıfır ekleyebilirsiniz.
 
-# Dikkat Komutu Girmeden önce alttaki görselleri ve açıklamaları okuyun.
-
-* Komutu başlatınca ilk olarak sizden bir chain ismi isteyecek. İstediğiniz bir ismi girebilirsiniz.
-
-![Ekran görüntüsü 2024-01-25 232028](https://github.com/CoinHuntersTR/Avail-Full-Node/assets/111747226/855de031-ad14-46b7-88bc-011333f8765f)
-
-* İkinci adımdaki seçimi ENTER yapıp geçiyoruz.
-
-![Ekran görüntüsü 2024-01-25 232058](https://github.com/CoinHuntersTR/Avail-Full-Node/assets/111747226/5de29fce-115c-42cf-a055-fcb30d827486)
-
-* Üçüncü adımda Çalıştıracağımız DA seçiyoruz. Burada AVAIL seçimi yapacağız.
-
-![Ekran görüntüsü 2024-01-25 232115](https://github.com/CoinHuntersTR/Avail-Full-Node/assets/111747226/ae813da1-c25c-4181-bda3-515043599c32)
-
 # ÇOK ÖNEMLİ!
 ![Ekran görüntüsü 2024-02-04 012747](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/4e2f0428-b785-47d9-8205-d630eafe0635)
 
