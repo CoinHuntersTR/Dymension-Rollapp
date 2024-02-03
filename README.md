@@ -75,6 +75,23 @@ roller config init --interactive
 ```
 nano /root/.roller/da-light-node/avail.toml
 ```
+![Ekran görüntüsü 2024-02-04 013647](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/b3efd93f-860c-4470-9249-186ba3632069)
+
+* Burada Mnemonic yazan yerde tırnak içindeki kelimeleri sil ve AVAIL cüzdanının kelimelerini gir. Kendi cüzdan kelimelerini girdikten sonra CTRL X yapıp Y basıp ENTER diyerek çıkıyoruz.
+
+```
+nano /root/.roller/rollapp/config/dymint.toml
+```
+![Ekran görüntüsü 2024-02-04 014259](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/fa02a18c-05b4-40be-a321-63693859454c)
+
+* Ekran görüntüsünde işaretlediğim yerdeki kelimeleri silip kendi cüzdan kelimelerini ekliyorsun. Sonra, CTRL X yapıp Y basıp ENTER ile kayıt edip çıkıyorsun.
+
+```
+roller keys list
+```
+* Yukarıdaki komut ile adreslerimizi tekrar listeliyoruz. Kendi AVAIL adresimizi orada görüyorsak, işlemlere devam edebiliriz.
+
+
 
 
 # Not: BURADA size yeni bir AVAIL adresi verecek onu AVAIL'de puan kastığımız cüzdan ile değiştireceğiz.
