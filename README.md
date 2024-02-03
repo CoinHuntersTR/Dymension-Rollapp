@@ -24,17 +24,41 @@ curl -L https://dymensionxyz.github.io/roller/install.sh | bash
 
 ![Ekran görüntüsü 2024-02-04 011820](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/12ab42c9-ebde-4950-84c8-52f6d5e6ec3a)
 
-* Rust versionu kontrol edelim;
+* Roller versiyon kontrolü;
 
 ```
-rustc --version
+roller version
 ```
-* versionumuz olarak bu çıkacak: rustc 1.75.0 (82e1608df 2023-12-21)
 
-### Git kuruyoruz.
+![Ekran görüntüsü 2024-02-04 011941](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/e8da0fe2-b378-4ac4-a5b6-6a7e77e86e79)
+
+
+### Rollap için gerekli ayarlamalrı yapıyoruz.
 ```
-sudo apt install git
+roller config init --interactive
 ```
+![Ekran görüntüsü 2024-02-04 012054](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/04bdf7ca-2a1b-4551-aeab-2b54d23f2cdc)
+
+* Froopyland ağını seçiyoruz.
+
+![Ekran görüntüsü 2024-02-04 012139](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/9b16ca44-50d1-482a-955f-01493e2042e4)
+
+* EVM Rollapp'i seçiyoruz.
+
+![Ekran görüntüsü 2024-02-04 012404](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/c745df05-521a-456d-888a-36131fd96b65)
+
+* Kendi Rollapp'inize verdiğiniz ismi yazın. Özel karakterler ve büyük harf kullanmayın! (-,* " gibi.)
+
+![Ekran görüntüsü 2024-02-04 012506](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/53d82d34-4a32-4e3d-841c-bfd9e31d3dab)
+
+* Token sembolünü seçiyoruz ETH, BTC gibi büyük harfle semboller girin. (Türkçe karakter kullanmayın.)
+
+![Ekran görüntüsü 2024-02-04 012621](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/56dc6dfc-9005-43fb-8673-903895e7eed4)
+
+* Token adedini belirliyoruz. Rastgele gelen miktar 1 Milyar adet daha fazla istiyorsanız sonuna sıfır ekleyebilirsiniz.
+
+
+
 ### Docker Kuruyoruz.
 
 ```
