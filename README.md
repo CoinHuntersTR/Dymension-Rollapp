@@ -114,9 +114,7 @@ cd madara-cli
 cargo build --release
 ```
 # Dikkat Komutu Girmeden önce alttaki görselleri ve açıklamaları okuyun.
-```
-./target/release/madara init
-```
+
 * Komutu başlatınca ilk olarak sizden bir chain ismi isteyecek. İstediğiniz bir ismi girebilirsiniz.
 
 ![Ekran görüntüsü 2024-01-25 232028](https://github.com/CoinHuntersTR/Avail-Full-Node/assets/111747226/855de031-ad14-46b7-88bc-011333f8765f)
@@ -128,6 +126,26 @@ cargo build --release
 * Üçüncü adımda Çalıştıracağımız DA seçiyoruz. Burada AVAIL seçimi yapacağız.
 
 ![Ekran görüntüsü 2024-01-25 232115](https://github.com/CoinHuntersTR/Avail-Full-Node/assets/111747226/ae813da1-c25c-4181-bda3-515043599c32)
+
+# ÇOK ÖNEMLİ!
+![Ekran görüntüsü 2024-02-04 012747](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/4e2f0428-b785-47d9-8205-d630eafe0635)
+
+* Burada seçimi AVAIL'i seçiyoruz.
+## Yukarıdaki adımları doğru şekilde tamamlarsanız aşağıdakine benzer bir çıktı alacaksınız.
+
+![Ekran görüntüsü 2024-02-04 012901](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/5fdd05b2-4a2e-48e8-ac6e-29fb140f5d62)
+
+* Burada size verilen DYM adreslerine Dymension discordundan DYM test tokeni istiyorsunuz. Dymension discorduna katılmadıysanız [BURADAN](https://discord.gg/dymension) katılabilirsiniz. Faucet kanallarına ulaşmak için #intro-lounge kanalında kendiniz hakkında bir şeyler yazın discorda giriş yapabilirsiniz. (Daha önce katıldıysanız zaten faucetlere ulaşabiliyorsunuz. Her iki DYM adresine de faucet isteyin.)
+
+## Devam etmeden önce OKU!!
+
+* ilk defa AVAIL'e katılyorsan ve daha önce AVAIL'den token istemediysen senlik bir durum yok, Aşağıda senin için not bırakacağım oradan devam et.
+* Madara yada daha önce AVAIL testine katılıp puan aldığın cüzdanı eklemek istiyorsan aşağıdaki adımları yap!
+
+```
+nano /root/.roller/da-light-node/avail.toml
+```
+
 
 # Not: BURADA size yeni bir AVAIL adresi verecek onu AVAIL'de puan kastığımız cüzdan ile değiştireceğiz.
 
