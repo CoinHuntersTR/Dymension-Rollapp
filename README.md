@@ -1,4 +1,4 @@
-<h1 align="center"> Madara & Karnot
+<h1 align="center"> Dymension Rollapp
   
 ![image](https://pbs.twimg.com/profile_banners/1506297383793176584/1685363195/1500x500)
 
@@ -6,25 +6,24 @@
 ### Ubunutu 22.04
 NODE TİPİ | CPU     | RAM      | SSD     |
 | ------------- | ------------- | ------------- | -------- |
-| Avail  | 4         | 8         | 160  |
+| Dymension Rollapp  | 4         | 8         | 160  |
   
 
-# Kurulum
+# Node Güncelleyelim
 
 ```
 sudo apt-get update -y && sudo apt-get upgrade -y
 ```
-### Rust Kuralım
+### Gerekli Kütüphaneleri indiriyoruz.
 ```
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+sudo apt install curl tar wget clang pkg-config libssl-dev jq build-essential bsdmainutils git make ncdu gcc git jq chrony liblz4-tool -y
 ```
-1 seçip devam ediyoruz.
+```
+curl -L https://dymensionxyz.github.io/roller/install.sh | bash
+```
 
+![Ekran görüntüsü 2024-02-04 011820](https://github.com/CoinHuntersTR/Dymension-Rollapp/assets/111747226/12ab42c9-ebde-4950-84c8-52f6d5e6ec3a)
 
-![Ekran görüntüsü 2024-01-25 231300](https://github.com/CoinHuntersTR/Avail-Full-Node/assets/111747226/fcfb956e-ab50-4e9d-a957-41556e883f41)
-```
-source $HOME/.cargo/env
-```
 * Rust versionu kontrol edelim;
 
 ```
